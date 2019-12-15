@@ -12,12 +12,12 @@ rsync -az username@server:/path/to/backup /backup/backupfoldername/firstbackup
 ln -s /backup/backupfoldername/firstbackup /backup/backupfoldername/current
 ```
 
-For differential backups - Then only changes from previous backup is saved.
+For differential backups - Only the changes different from previous backup is saved.
 ```
 /path/to/backup.sh diff username@server:/path/to/backup backupfoldername
 ```
 
-For complete backups - All is backupped
+For complete backups - There is made a backup of all data
 ```
 /path/to/backup.sh complete username@server:/path/to/backup backupfoldername
 ```
